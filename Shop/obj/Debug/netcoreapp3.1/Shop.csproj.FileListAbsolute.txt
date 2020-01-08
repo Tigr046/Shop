@@ -120,3 +120,5 @@ C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Add\Ad
 C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Phone\Index.cshtml.g.cs
 C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Phone\Product.cshtml.g.cs
+C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Edit\PhoneEdit.cshtml.g.cs
+C:\Users\tigra\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Edit\Index.cshtml.g.cs

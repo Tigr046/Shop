@@ -1,10 +1,11 @@
-﻿
+﻿@model CartModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Корзина";
 }
 
 <h1 class="text-center text-dark">Корзина</h1>
-@if(ViewBag.cart!=null)
+@if (ViewBag.cart != null)
+{
     @foreach (var item in ViewBag.cart)
     {
     <p>
@@ -16,5 +17,11 @@
             <div >Общая стоимость: @(item.Quantity * item.Phone.Price)</div>
 
         </div>
+        
     </p>
+    
     }
+    <div>Суммарная стоимость @Model.TotalPrice</div>
+    <div>Количество @Model.Count</div>
+    <button class="btn btn-dark">Купить</button>
+}

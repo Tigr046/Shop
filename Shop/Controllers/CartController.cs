@@ -14,11 +14,17 @@ namespace Shop.Controllers
     {
         private ApplicationContext db = new ApplicationContext();
 
-        public IActionResult Index()
+        public IActionResult Index(CartModel cartModel)
         {
             var cart = SessionHelper.GetObjectFromJson<List<PhoneItem>>(HttpContext.Session, "cart");
             ViewBag.cart = cart;
-            return View();
+            if (cart != null)
+                foreach (var i in cart)
+                {
+                    cartModel.Count += i.Quantity;
+                    cartModel.TotalPrice += i.Quantity * i.Phone.Price;
+                }
+            return View(cartModel);
         }
 
         public IActionResult Buy(Guid id)

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Shop.Models
 {
-    public class PhoneItem
+    public class CartModel
     {
-        public Phone Phone { get; set; }
-        public int Quantity { get; set; }
+        public int Count { get; set; } = 0;
+        public decimal TotalPrice { get; set; } = 0;
     }
 }
